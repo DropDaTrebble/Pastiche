@@ -37,19 +37,33 @@ public class MainGUI extends JFrame {
 		
 		//System.out.print("-MainGUI: Panels done, now adding to frame:\n");
                 
-                MenuGui menuGui = new MenuGui();
+                //MenuGui menuGui = new MenuGui(middlePanel.imgArea);
+                //menuGui.setImgArea(middlePanel.imgArea);
                 
 		frame.add(middlePanel.getMiddlePanel(), BorderLayout.CENTER);
 		frame.add(leftPanel.getLeftPanel(),BorderLayout.WEST);
 		frame.add(rightPanel.getRightPanel(), BorderLayout.EAST);
+                MenuGui menuGui = new MenuGui();
                 frame.setJMenuBar(menuGui.getBar());
-                //frame.add(imgArea, BorderLayout.CENTER);  //TODO: psuje sie
-                        //frame.pack();
 		
+                middlePanel.drawCirclesFunction(); //comment this to stop showing 10 red circles
+                        
 		frame.setLocationRelativeTo(null);
-		
-		frame.setVisible(true);
-		
+		frame.pack();
+		frame.setVisible(true);		
+                
+                /*while(true)
+                {
+                    if(menuGui.test)
+                    {
+                        middlePanel.drawCirclesFunction(); //comment this to stop showing 10 red circles
+                            //menuGui.test = false;
+                            frame.setVisible(false);	
+                            frame.setVisible(true);	
+                    }
+                }*/
+                
+                
 	}
 	
 }

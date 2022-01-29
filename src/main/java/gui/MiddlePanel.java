@@ -64,4 +64,9 @@ public class MiddlePanel {
         //this.g.setColor(Color.BLACK);
         //g.drawString("Hell", 2, 2);
     }
+    
+    public void drawCirclesFunction()
+    {
+        imgArea.circle = true;
+    }
 }

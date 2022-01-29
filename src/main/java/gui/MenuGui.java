@@ -15,11 +15,13 @@ import java.awt.event.ItemListener;
 public class MenuGui implements ActionListener, ItemListener {
     
     JMenuBar menuBar;
+    //boolean test;
     
     public MenuGui()
     {
         this.menuBar = new JMenuBar();
         this.menuBar.setBackground(Color.WHITE);
+        //this.test = false;
                 
         JMenu menuFile = new JMenu("Plik");
         JMenu menuEdit = new JMenu("Edycja");
@@ -33,6 +35,7 @@ public class MenuGui implements ActionListener, ItemListener {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.print("\nNACIŚNIĘTO: \'Otwórz\'");
+                //test = true;
             }
         });
         
