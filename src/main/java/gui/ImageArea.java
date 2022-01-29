@@ -9,11 +9,13 @@ import java.awt.*;
 
 public class ImageArea extends Canvas{
     
+    
     public ImageArea(Color color, int width, int height)
     {
         setBackground(color);
         setSize(new Dimension(width, height));
         setVisible(true);
+        
     }
     
 }

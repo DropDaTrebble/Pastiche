@@ -26,6 +26,10 @@ public class MainGUI extends JFrame {
 		frame.setLayout(new BorderLayout()); //po kolei
 
                 MiddlePanel middlePanel = new MiddlePanel(Color.DARK_GRAY, 40, 40);
+                middlePanel.newImageArea(Color.WHITE, 300, 400);
+                //middlePanel.hideImageArea();
+                //middlePanel.drawTest();
+                
                 LeftPanel leftPanel = new LeftPanel(Color.GRAY, 200, 300);
                 RightPanel rightPanel = new RightPanel(Color.GRAY, 200, 300);
                 
