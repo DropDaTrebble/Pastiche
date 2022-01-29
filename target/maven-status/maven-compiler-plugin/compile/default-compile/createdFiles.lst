@@ -1,5 +1,6 @@
 gui\MiddlePanel.class
 tools\pencil.class
+gui\MenuGui.class
 main\NewMain.class
 gui\MainGUI.class
 gui\SidePanel.class
