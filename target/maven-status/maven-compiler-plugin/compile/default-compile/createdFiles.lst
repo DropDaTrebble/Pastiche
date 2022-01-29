@@ -1,6 +1,10 @@
-gui\MiddlePanel.class
-tools\pencil.class
+gui\ImageArea.class
 gui\MenuGui.class
+gui\SidePanel.class
+gui\MiddlePanel.class
+gui\RightPanel.class
+tools\pencil.class
+gui\MenuGui$1.class
+gui\LeftPanel.class
 main\NewMain.class
 gui\MainGUI.class
-gui\SidePanel.class

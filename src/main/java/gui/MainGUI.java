@@ -25,26 +25,22 @@ public class MainGUI extends JFrame {
 		frame.setMinimumSize(new Dimension(900, 600));
 		frame.setLayout(new BorderLayout()); //po kolei
 
-                MiddlePanel middlePanel = new MiddlePanel(Color.gray, 10, 10);
+                MiddlePanel middlePanel = new MiddlePanel(Color.DARK_GRAY, 40, 40);
+                LeftPanel leftPanel = new LeftPanel(Color.GRAY, 200, 300);
+                RightPanel rightPanel = new RightPanel(Color.GRAY, 200, 300);
+                
+               // ImageArea imgArea = new ImageArea(Color.WHITE, 20, 20);
 		
-		JPanel leftPanel = new JPanel();
-		leftPanel.setBackground (Color.magenta);
-		leftPanel.setPreferredSize(new Dimension(200,300));
-		
-		//SidePanel leftPanel = new SidePanel(new Dimension(140,300), Color.magenta); //wtf XD
-		
-		JPanel rightPanel = new JPanel();
-		rightPanel.setBackground(Color.cyan);
-		rightPanel.setPreferredSize(new Dimension(200,300));
-		
-		System.out.print("-MainGUI: Panels done, now adding to frame:\n");
+		//System.out.print("-MainGUI: Panels done, now adding to frame:\n");
                 
                 MenuGui menuGui = new MenuGui();
                 
 		frame.add(middlePanel.getMiddlePanel(), BorderLayout.CENTER);
-		frame.add(leftPanel,BorderLayout.WEST);
-		frame.add(rightPanel, BorderLayout.EAST);
+		frame.add(leftPanel.getLeftPanel(),BorderLayout.WEST);
+		frame.add(rightPanel.getRightPanel(), BorderLayout.EAST);
                 frame.setJMenuBar(menuGui.getBar());
+                //frame.add(imgArea, BorderLayout.CENTER);  //TODO: psuje sie
+                        //frame.pack();
 		
 		frame.setLocationRelativeTo(null);
 		
